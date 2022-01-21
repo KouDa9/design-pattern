@@ -3,24 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyLibrabry;
+using MyLibrary;
 
-namespace MyLibrary
+
+namespace MyLibrabry
 {
-    public class RedheadDuck : Duck, IQuackable, IFlyable
+    public class RubberDuck : Duck, IQuackable
     {
         public override string display()
         {
             return "display" + this.GetType();
         }
+
         public string quack()
         {
-            return "QUUUAACCKK";
+            return "QUUACKCK";
         }
 
-        public string Fly()
-        {
-            return "ReadheadIsFlying";
-        }
     }
 }
