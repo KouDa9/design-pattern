@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyLibrary;
 
 
-namespace MyLibrabry
+
+namespace MyLibrary
 {
-    public class RubberDuck : Duck, IQuackable
+    public class RubberDuck : Duck
     {
+        public RubberDuck()
+        {
+            quackBehavior = new Squeak();
+            flyBehavior = new FlyNoWay();
+        }
         public override string display()
         {
-            return "display" + this.GetType();
-        }
-
-        public string quack()
-        {
-            return "QUUACKCK";
+            return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
 
     }

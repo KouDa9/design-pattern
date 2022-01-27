@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    public interface IQuackBehavior
+    public class Quack : IQuackBehavior
     {
-        string quack();
-        
+        public string quack()
+        {
+            return "Кря кря кря";
+        }
     }
 }

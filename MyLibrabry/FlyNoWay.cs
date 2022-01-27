@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    public interface IQuackBehavior
+    public class FlyNoWay : IFlyBehavior
     {
-        string quack();
-        
+        public string fly()
+        {
+            return "ICantFly((";
+        }
     }
 }

@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyLibrabry\MyLibrabry.csproj">
+    <ProjectReference Include="..\MyLibrabry\MyLibrary.csproj">
       <Project>{baf0f59f-b39d-4629-8ae2-e65c22bd3a68}</Project>
-      <Name>MyLibrabry</Name>
+      <Name>MyLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

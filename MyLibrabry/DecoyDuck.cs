@@ -5,13 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using MyLibrary;
 
-namespace MyLibrabry
+namespace MyLibrary
 {
     public class DecoyDuck: Duck
     {
+        public DecoyDuck()
+        {
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new MuteQuack();
+        }
         public override string display()
         {
-            return "display" + this.GetType();
+            return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLibrabry
+namespace MyLibrary
 {
-    public interface IFlyable
+    public interface IFlyBehavior
     {
-        string Fly();
+        string fly();
     }
 }
