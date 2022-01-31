@@ -1,18 +1,18 @@
-﻿using MyLibrary;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyLibrary;
 
 namespace MyLibrary
 {
-    public class MallarDuck : Duck
+    public class DecoyDuck: Duck
     {
-        public MallarDuck()
+        public DecoyDuck()
         {
-            flyBehavior = new FlyWithWings();
-            quackBehavior = new Quack();
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new MuteQuack();
         }
         public override string display()
         {

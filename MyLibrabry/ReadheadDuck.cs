@@ -8,9 +8,14 @@ namespace MyLibrary
 {
     public class RedheadDuck : Duck
     {
+        public RedheadDuck()
+        {
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new Quack();
+        }
         public override string display()
         {
-            return "display" + this.GetType();
+            return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
     }
 }

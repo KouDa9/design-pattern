@@ -1,22 +1,24 @@
-﻿using MyLibrary;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace MyLibrary
 {
-    public class MallarDuck : Duck
+    public class RubberDuck : Duck
     {
-        public MallarDuck()
+        public RubberDuck()
         {
-            flyBehavior = new FlyWithWings();
-            quackBehavior = new Quack();
+            quackBehavior = new Squeak();
+            flyBehavior = new FlyNoWay();
         }
         public override string display()
         {
             return this.GetType() + " " + this.flyBehavior + " " + this.quackBehavior;
         }
+
     }
 }
