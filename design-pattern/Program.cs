@@ -20,6 +20,10 @@ namespace MyLR
             IFlyBehavior fnw = new FlyNoWay();
             IQuackBehavior mq = new MuteQuack();
 
+            mal.setFlyBehavior(fnw);
+            mal.setQuackBehavior(mq);
+
+
             Duck[] mas = new Duck[] { mal, red, rub, dec };
 
             for (int i = 0; i < mas.Length; i++)
